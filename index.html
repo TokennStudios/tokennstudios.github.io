@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tokenn Studios – Dark fantasy games and Unity assets</title>
+<meta name="description" content="Tokenn Studios is a one-person indie studio building MORVANE, a dark fantasy action game in Unity, and making dark fantasy assets for the Unity Asset Store.">
+<link rel="icon" href="emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0b0b0b; --panel:#141210; --line:#2a2520; --text:#e6ddd0; --muted:#9a8f82; --ember:#e08a3e; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 Montserrat, system-ui, sans-serif; }
+  a { color:var(--ember); text-decoration:none; } a:hover { text-decoration:underline; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  header { padding:28px 0; border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  header img { height:58px; display:block; }
+  nav a { color:var(--muted); margin-left:22px; font-weight:600; font-size:14px; letter-spacing:.06em; text-transform:uppercase; }
+  nav a:hover { color:var(--text); text-decoration:none; }
+  h1, h2, h3 { font-family:Cinzel, Georgia, serif; font-weight:700; letter-spacing:.04em; margin:0 0 12px; }
+  .hero { padding:72px 0 56px; text-align:center; }
+  .hero h1 { font-size:clamp(30px,5vw,52px); }
+  .hero p { color:var(--muted); max-width:640px; margin:0 auto; font-size:18px; }
+  section { padding:56px 0; border-top:1px solid var(--line); }
+  h2 { font-size:30px; }
+  .lead { color:var(--muted); max-width:720px; margin-bottom:28px; }
+  .heroes { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+  .card img { width:100%; display:block; }
+  .card .t { padding:12px 14px; font-family:Cinzel, serif; font-weight:700; letter-spacing:.05em; }
+  .pack { display:grid; grid-template-columns:3fr 2fr; gap:28px; align-items:start; }
+  .pack img.cover { width:100%; border-radius:6px; border:1px solid var(--line); display:block; }
+  .shots { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:12px; }
+  .shots img { width:100%; border-radius:4px; border:1px solid var(--line); display:block; }
+  .tag { display:inline-block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--ember); border:1px solid var(--ember); border-radius:3px; padding:2px 8px; margin-bottom:12px; }
+  ul.plain { padding-left:18px; color:var(--muted); }
+  .soon { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px; }
+  .soon div { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:18px; }
+  .soon h3 { font-size:17px; margin-bottom:6px; }
+  .soon p { color:var(--muted); margin:0; font-size:14px; }
+  .contact a.mail { font-size:20px; font-weight:600; }
+  footer { padding:28px 0 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+  @media (max-width:800px) { .heroes { grid-template-columns:repeat(2,1fr); } .pack, .soon { grid-template-columns:1fr; } nav a { margin:0 16px 0 0; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="logo.png" alt="Tokenn Studios">
+    <nav><a href="#morvane">MORVANE</a><a href="#assets">Assets</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <h1>One dev. First game. AAA dreams.</h1>
+  <p>Tokenn Studios is a one-person indie studio building MORVANE, a dark fantasy action game in Unity, and turning the art made for it into assets for other developers.</p>
+</div>
+
+<section id="morvane">
+  <div class="wrap">
+    <h2>MORVANE</h2>
+    <p class="lead">A dark fantasy hack-and-slash in development. Four heroes, a ruined tower hub and a cursed land to fight through. Follow the build on TikTok, Instagram and YouTube.</p>
+    <div class="heroes">
+      <div class="card"><img src="gravewarden.jpg" alt="The Gravewarden" loading="lazy"><div class="t">The Gravewarden</div></div>
+      <div class="card"><img src="ashcaller.jpg" alt="The Ashcaller" loading="lazy"><div class="t">The Ashcaller</div></div>
+      <div class="card"><img src="oathbound.jpg" alt="The Oathbound" loading="lazy"><div class="t">The Oathbound</div></div>
+      <div class="card"><img src="hollowstalker.jpg" alt="The Hollow Stalker" loading="lazy"><div class="t">The Hollow Stalker</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="assets">
+  <div class="wrap">
+    <h2>Unity Assets</h2>
+    <p class="lead">Game-ready dark fantasy props for URP, taken from MORVANE's own hub and set up for your project: prefabs at real-world scale, 2K PBR textures and lit demo scenes.</p>
+    <div class="pack">
+      <div>
+        <img class="cover" src="forge_cover.jpg" alt="Medieval Blacksmith Forge">
+        <div class="shots">
+          <img src="forge_anvil.jpg" alt="Anvil and furnace" loading="lazy">
+          <img src="forge_furnace.jpg" alt="Furnace and lava basin" loading="lazy">
+          <img src="forge_armoury.jpg" alt="Armoury corner" loading="lazy">
+        </div>
+      </div>
+      <div>
+        <span class="tag">Coming to the Asset Store</span>
+        <h3>Medieval Blacksmith Forge</h3>
+        <p>A complete dark fantasy smithy in 39 props: furnace and bellows, anvil, water-driven trip hammer, casting bed, jib crane, ore cart, weapon and armour racks.</p>
+        <ul class="plain">
+          <li>39 prefabs, about 9k–40k triangles each</li>
+          <li>2048 px PBR textures, glowing molten metal</li>
+          <li>Lit demo scene and a showcase scene</li>
+          <li>Universal Render Pipeline</li>
+        </ul>
+      </div>
+    </div>
+    <div class="soon">
+      <div><h3>Dark Fantasy Merchant Market</h3><p>30 shop and trader props: counters, curio cabinets, potions, treasure.</p></div>
+      <div><h3>Gothic Hall &amp; Crypt</h3><p>37 arches, doors, pillars, gargoyles, tombs and grim dressing.</p></div>
+      <div><h3>Wizard's Sanctum</h3><p>16 arcane study props: orrery, lecterns, bookcases, crystals.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="lead">Questions about an asset, support, or just want to talk games? Get in touch.</p>
+    <p><a class="mail" href="mailto:tokennstudios@gmail.com">tokennstudios@gmail.com</a></p>
+    <p>Follow the build: <a href="https://www.youtube.com/@TokennStudios">YouTube</a> · <a href="https://www.tiktok.com/@tokennstudios">TikTok</a> · <a href="https://www.instagram.com/tokennstudios2026/">Instagram</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Tokenn Studios. MORVANE is in development; images are from the game and its asset packs.</div>
+</footer>
+</body>
+</html>
